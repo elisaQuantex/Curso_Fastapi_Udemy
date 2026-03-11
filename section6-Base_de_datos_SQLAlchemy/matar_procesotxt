@@ -1,0 +1,5 @@
+para matar cuando dice puerto en uso:
+sudo pkill -f uvicorn
+sudo pkill -f "python.*main"
+sudo pkill -f python
+

@@ -1,0 +1,1 @@
+antes era necesario crear el archivo __init__.py, ahora no es necesario, pero lo creamos por practica. Es un python vacío.

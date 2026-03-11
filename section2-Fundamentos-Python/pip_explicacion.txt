@@ -1,0 +1,11 @@
+para ver si tenemos instalado pip:
+>> pip --version
+ó
+>> pip3 --version
+
+por ejemplo:
+>> python3 -m venv cowEnv  --> creo entorno virtual, no se porque sino no me deja usar pip.
+>> source cowEnv/bin/activate
+
+>> pip install cowpy
+

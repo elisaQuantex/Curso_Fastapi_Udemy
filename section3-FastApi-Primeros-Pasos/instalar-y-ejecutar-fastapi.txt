@@ -1,0 +1,23 @@
+instalar
+>> pip install "fastapi[standard]"
+
+y ahi ya instala todas las dependencias: uvicorn, etc.
+
+Para ejecutar la version de desarrollo uso:
+>> fastapi dev main.py
+ó
+>> uvicorn main:app --reload    --> el reload es para que se recarge solo cuando modifico el codigo y no tengo que volver a correrlo.
+
+---------------------------------------------------------------------------------------------------
+Para agregar un nuevo item usando el metodo POST, puedo hacerlo usando la doc con swagger (http://127.0.0.1:8000/docs#) o usando:
+
+*Curl:
+>> curl -X POST http://127.0.0.1:8000/posts -H "Content-Type: application/json" -d '{"title":"Nuevo post desde curl", "content": "Mi nuevo post desde Curl"}'
+
+*Postman:
+
+Abro postman, voy a collection y selecciono el mas y le doy un nombre a la nueva coleccion. Luego, add a request. 
+En el nombre le ponemos: "crear un nuevo post". Selecciono método post (en lugar de get) y le doy la ruta: http://127.0.0.1:8000/posts. 
+Voy a body--> raw y le doy el contenido: {"title":"Nuevo post desde curl", "content": "Mi nuevo post desde Curl"}. 
+Luego, send.
+
